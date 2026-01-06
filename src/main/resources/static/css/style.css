@@ -1,0 +1,285 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ========== TOP BAR / NAV ========== */
+.topbar {
+  background: #0b1220;
+  border-bottom: 1px solid #1f2a44;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 200px;            /* ✅ Desktop default */
+  width: auto;
+}
+
+.brand span {
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* NAV LINKS */
+nav a {
+  color: #c7d2fe;
+  text-decoration: none;
+  margin-left: 26px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #3b82f6;
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: black;
+  color: #ffffff;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* ========== HERO SUB ========== */
+.hero-sub {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-sub h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #0b1220;
+}
+
+.hero-sub p {
+  font-size: 1.15rem;
+  color: #4b5563;
+  max-width: 760px;
+  margin: auto;
+}
+
+/* ========== SECTIONS ========== */
+.content,
+.why-us,
+.note {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #0b1220;
+}
+
+
+/* ========== WHY US ========== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ========== CONTACT ========== */
+.contact-details,
+.contact-form {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.details-box {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.contact-form h3 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 520px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #0b1220;
+  color: #c7d2fe;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.95rem;
+}
+
+/* ========== TABLET ========== */
+@media (max-width: 900px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo {
+    height: 130px;     /* Tablet */
+  }
+
+  .brand span {
+    font-size: 1.35rem;
+  }
+
+  nav a {
+    margin: 0 12px;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+  .logo {
+    height: 200px;     /* Mobile hero logo */
+  }
+
+  .brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand span {
+    font-size: 1.25rem;
+  }
+}
+/* ========== SERVICES GRID LAYOUT ========== */
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service-box {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.service-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0b1220;
+}
+
+.service-box p {
+  font-size: 1.05rem;
+  color: #4b5563;
+}
+
+/* Last single box centered */
+.service-box.single {
+  grid-column: span 2;
+  max-width: 520px;
+  margin: auto;
+}
+
+/* ========== MOBILE FIX ========== */
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box.single {
+    grid-column: span 1;
+  }
+}
